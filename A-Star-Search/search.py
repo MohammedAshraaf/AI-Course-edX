@@ -35,7 +35,7 @@ def a_star_search(start, goal, moves):
     frontier.put(start, g_of_n(start) + h_of_n(start))
     # explore the node
     explored = explored_dic(len(start.item))
-    # loop as long frontier is not input
+    # loop as long frontier is not empty
     while frontier.not_empty():
         # get the node with the highest priority
         state = frontier.get()
@@ -46,10 +46,15 @@ def a_star_search(start, goal, moves):
         zero = state.item.index(0)
         # add the node to explored using
         explored[zero].add(tuple(state.item))
+	# all possible moves for the current node
         for move in moves[zero]:
+	    # create new child adding to it the previous steps that taken to reach it
             new_child = State(state.moves[:], state.prevSteps + 1)
+	    # give it the new configuration
             new_child.create_item(move_list(move, state.item[:], zero))
+  	    # get the zero index of the child
             zero2 = new_child.item.index(0)
+	    # check if it's already explored or added to the frontier
             if tuple(new_child.item) in explored[zero2] or frontier.in_frontier(tuple(new_child.item)):
                 continue
             else:
