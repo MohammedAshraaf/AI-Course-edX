@@ -4,10 +4,10 @@ Implementation for the the algorithms introduced in introduction to AI course fr
 
 ## Getting Started
 
-Download the files for any project you'd like then run the main file and the usage is going to appear to you
+Download the files for any project and you're ready to go!
 
 ### Prerequisites
 
 ```
-Python 2
+Python 2 => https://goo.gl/zD9zUP
 ```
