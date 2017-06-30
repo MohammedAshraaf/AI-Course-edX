@@ -1,3 +1,5 @@
 # Artificial Intelligence
 
-Implementation for algorithms introduced in introduction to AI course from university of Columbia through edX AND Machine Learning course from Stanford university through Coursera
+Implementation for algorithms introduced in:<br>
+introduction to AI => university of Columbia through edX<br>
+Machine Learning => Stanford university through Coursera
